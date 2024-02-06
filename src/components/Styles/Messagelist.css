@@ -1,0 +1,90 @@
+.user-message {
+    background-color: maroon; /* Maroon background color for user messages */
+    color: #fff; /* White text color for user messages */
+    border-radius: 15px; /* Rounded corners for user messages */
+    padding: 10px; /* Padding for user messages */
+    margin: 5px; /* Margin for user messages */
+    max-width: 70%; /* Maximum width for user messages */
+    float: left; /* Align user messages to the left */
+    clear: both;
+    word-wrap: break-word;
+    max-width: 80%;  /* Clear floats to prevent overlapping */
+  }
+  /* Styles/Window.css */
+.message.user-message {
+    background-color: #800000; /* Maroon background color */
+    color: white; /* Text color for user messages */
+    border-radius: 8px;
+    padding: 10px 15px;
+    word-wrap: break-word; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 18px;
+    /* margin-left: 600px; Adjust to move user messages to the right */
+    margin-bottom: 10px;
+    
+    align-self: flex-end; /* Align user messages to the right */
+  }
+  .bot-message {
+    /* Add your bot message styles here, similar to the user message */
+    max-width: 70%; /* Adjust the width as necessary */
+    margin-bottom: 5px; /* Adds 5px space below each bot message */
+  }
+  
+.bot-message-container {
+    background-color: #f7f5f5; 
+    border-radius: 8px; 
+    padding: 10px 15px; 
+    margin: 18px;
+    margin-left: 40px;
+    margin-bottom: -9px;
+    max-width: 80%; 
+  }
+  
+  .bot-message {
+    color: black; 
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px; 
+    line-height: 1.5; 
+  }
+  /* General styles for all messages */
+.message {
+    margin-bottom: 10px; /* This will add space between each message */
+    padding: 10px 15px; /* Common padding */
+    border-radius: 8px; /* Common border-radius */
+    max-width: 70%; /* Common maximum width */
+    word-break: break-word; /* Ensures text wraps and doesn't overflow */
+  }
+  
+  /* Styles specific to bot messages */
+  .bot-message-container {
+    background-color: #f7f5f5; /* Light gray background */
+    margin-left: 40px; /* Adjust if you want more space on the left side */
+  }
+  
+  .bot-message {
+    color: black; /* Black text color for bot messages */
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  /* Styles specific to user messages */
+  .user-message {
+    background-color: maroon; /* Maroon background color for user messages */
+    color: white; /* White text color for user messages */
+    margin-right: auto; /* Ensures alignment to the left */
+    margin-left: 0; /* Resets any left margin if present */
+    float: none; /* Removes float, if you're using flex or grid for layout */
+    clear: both; /* Clears floated elements */
+    align-self: flex-start; /* Aligns user messages to the start (left) */
+  }
+  
+  /* Ensure the container of messages is styled to handle children */
+  #message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Creates space between message elements */
+  }
+  

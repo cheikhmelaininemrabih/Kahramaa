@@ -1,0 +1,52 @@
+.chat-window {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 700px;
+  max-height: 190vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-height: 600px) {
+  .chat-window {
+      max-height: 225vh; 
+      bottom: 50px; 
+  }
+}
+/* Styles/Window.css */
+.messages-container {
+  max-height: 70%; /* Adjust based on your layout */
+  overflow-y: auto;
+  padding: 10px;
+
+  /* Hide scrollbar for Webkit browsers */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 95%; 
+  overflow: hidden; /* Prevent the whole window from scrolling */
+}
+
+.message-list {
+  overflow-y: auto;
+  flex-grow: 1; /* Allows the message list to fill the space */
+}

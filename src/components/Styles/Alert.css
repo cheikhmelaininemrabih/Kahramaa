@@ -1,0 +1,35 @@
+/* Alert.css */
+
+.chat-alert {
+    /* Position absolutely within the chat window */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    padding: 10px;
+    margin-left:40px;
+    margin-top: 120px;
+    margin-right: 20px;
+    border-radius: 2px;
+    width:85%;
+    height: 100px; /* Add some padding */
+    background-color: rgb(245, 235, 235); /* Light pink background */
+     /* Left border for emphasis */
+    color: black; /* Text color for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  .warning-message {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+  }
+  
+  .icon {
+    margin-right: 16px;
+    font-size: 15px;
+    color: #501e1c;
+  }
