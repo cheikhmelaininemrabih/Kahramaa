@@ -14,13 +14,20 @@ const ChatWindow = ({ onClose }) => {
             sendBoxBackground: '#fafafa',
             sendBoxTextColor: '#333',
             sendBoxButtonColor: '#582900',
-            sendBoxHeight: 80,
+            sendBoxHeight: 60,
             bubbleFromUserBackground: 'blue',
             bubbleFromUserTextColor: '#FFFFFF',
             bubbleBackground: '#E2E2E2',
             bubbleTextColor: '#000000',
         };
-       
+        function scrollToBottom() {
+            const chatContainer = webChatContainerRef.current;
+            if (chatContainer) {
+                // Scroll to the bottom of the container
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        }
+        
         const tokenEndpointURL = 'https://defaultb7c4ca7aa4ba454eaaf5c7edf7f73e.aa.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr1eb_kahramaaWeb/directline/token?api-version=2022-03-01-preview';
         const apiVersion = new URL(tokenEndpointURL).searchParams.get('api-version');
 
@@ -61,6 +68,23 @@ const ChatWindow = ({ onClose }) => {
 
         fetchTokenAndRenderChat();
     }, [locale]);
+    // Assuming `webChatContainerRef` is the ref to your chat container
+// This function would be called whenever a new message is added
+function scrollToBottom() {
+    const chatContainer = webChatContainerRef.current;
+    if (chatContainer) {
+        // Scroll to the bottom of the container
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+}
+useEffect(() => {
+    const interval = setInterval(() => {
+        scrollToBottom();
+    }, 1000); // Check every 1000 milliseconds (1 second)
+
+    return () => clearInterval(interval);
+}, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
+
     return (
         <div className="chat-window">
             <ChatHeader onMinimize={onClose} />
