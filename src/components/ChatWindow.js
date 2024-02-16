@@ -15,7 +15,7 @@ const ChatWindow = ({ onClose }) => {
             sendBoxTextColor: '#333',
             sendBoxButtonColor: '#582900',
             sendBoxHeight: 60,
-            bubbleFromUserBackground: 'blue',
+            bubbleFromUserBackground: '#9c0058',
             bubbleFromUserTextColor: '#FFFFFF',
             bubbleBackground: '#E2E2E2',
             bubbleTextColor: '#000000',

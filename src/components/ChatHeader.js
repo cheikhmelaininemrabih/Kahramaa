@@ -11,17 +11,17 @@ const ChatHeader = ({ onMinimize }) => {
       <div className="logo-and-text">
         <img src={logo} alt="Chatbot Logo" className="chat-logo" />
         <div>
-          <div className="hi-there">Hi there</div>
-          <div className="how-can-we-help">How can we help?</div>
+          <div className="hi-there">مرحبا بكم في كهرماء</div>
+          <div className="how-can-we-help">Welcome to Kahramaa</div>
         </div>
       </div>
       <div className="contact-and-minimize">
         <div className="contact-us-container">
           <FontAwesomeIcon icon={faPhone} className="icon-phone" />
-          <span>Contact Us :</span>
-          <a href="tel:109" className="phone-number">109</a>
+          <span>Contact Us : </span>
+          <a href="tel:109" className="phone-number">991</a>
           <span className="phone-number-plus"> | </span>
-          <a href="tel:+97444069999" className="phone-number">+974 11111111</a>
+          <a href="tel:+97444069999" className="phone-number">+974 4449 4000  ​​​</a>
         </div>
         <button className="minimize-button" onClick={onMinimize}>-</button>
       </div>
