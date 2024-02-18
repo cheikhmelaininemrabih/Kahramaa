@@ -1,18 +1,40 @@
 .chat-window {
   position: fixed;
-  bottom: 100px;
-  right: 100px;
-  width: 800px; /* Set your desired width here */
-  height: 900px; /* Set your desired height here */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
   background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px #838383;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Keeping responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  .chat-window {
+    border-radius: 0; /* Full-window might not need border-radius */
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-window {
+    border-radius: 0; /* Adjusting for smaller devices */
+  }
+}
+
+/* Scrollbar adjustments */
+.webchat-container::-webkit-scrollbar, 
+.messages-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for a cleaner look */
+}
+
+.webchat-container,
+.messages-container {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
 .chat-messages {
   flex: 1;
   overflow-y: auto;
