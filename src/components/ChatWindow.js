@@ -13,11 +13,11 @@ const ChatWindow = ({ onClose }) => {
             bubbleTextColor: '#000',
             sendBoxBackground: '#fafafa',
             sendBoxTextColor: '#333',
-            sendBoxButtonColor: '#582900',
-            sendBoxHeight: 60,
+            sendBoxButtonColor: '#9c0058',
+            sendBoxHeight: 100,
             bubbleFromUserBackground: '#9c0058',
             bubbleFromUserTextColor: '#FFFFFF',
-            bubbleBackground: '#E2E2E2',
+            bubbleBackground: '#FFFFFF',
             bubbleTextColor: '#000000',
         };
         function scrollToBottom() {
