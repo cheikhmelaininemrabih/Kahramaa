@@ -4,7 +4,7 @@ import './Styles/Window.css';
 
 const ChatWindow = ({ onClose }) => {
     const webChatContainerRef = useRef(null);
-    const [locale, setLocale] = useState('en');
+    const [locale] = useState('en');
 
     useEffect(() => {
         const styleOptions = {
@@ -17,8 +17,8 @@ const ChatWindow = ({ onClose }) => {
             sendBoxHeight: 100,
             bubbleFromUserBackground: '#9c0058',
             bubbleFromUserTextColor: '#FFFFFF',
-            bubbleBackground: '#FFFFFF',
-            bubbleTextColor: '#000000',
+            
+            
         };
         
         
