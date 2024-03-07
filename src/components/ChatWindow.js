@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ChatHeader from './ChatHeader';
-import './Styles/Window.css';
+import './Styles/kahramaa.css';
 
 const ChatWindow = ({ onClose }) => {
     const webChatContainerRef = useRef(null);

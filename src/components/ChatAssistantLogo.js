@@ -1,7 +1,7 @@
 // ChatAssistantLogo.js
 import React from 'react';
 import chatLogo from './kahramalogo.png'; 
-import './Styles/Logo.css'
+import './Styles/kahramaa.css'
 const ChatAssistantLogo = ({ onToggleChat }) => {
   return (
     <button className="chat-assistant-logo" onClick={onToggleChat}>
